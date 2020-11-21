@@ -1,0 +1,24 @@
+# HashMap
+
+## Java7
+
+- 总结：数组+链表
+- 结构：外层结构是array，array的每一个元素是Entry<k, v>，k是哈希值，v是singlylinkedlist
+- 用array的原因：使用hash值**快速定位**
+- 用链表的原因：发生hash冲突时**快速插入**新值
+
+
+
+## Java8
+
+- 总结：数组+链表+红黑树
+
+- 结构：外层结构是array，array的每一个元素是Entry<k, v>，k是哈希值，v是singlylinkedlist或红黑树
+
+- 用array的原因：使用hash值快速定位
+
+- 用链表的原因：发生hash冲突时快速插入新值
+
+- 用红黑树的原因：当链表长度>8时替代链表来**提升查询速度**到O(logn)
+
+  链表长度<8时仍然使用链表是因为构造树也需要资源
