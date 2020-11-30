@@ -11,7 +11,7 @@
 
 
 
-# 数据库索引
+# 索引
 
 数据库是存在**磁盘**上的，索引要考虑磁盘的读取效率。
 
@@ -40,3 +40,15 @@
 
 - 索引：B+树
 - 用3个文件存储：.frm存结构 .MYI存索引 .MYD存数据
+
+
+
+# MySQL commands
+
+```mysql
+-- connect to a server
+mysql -u root -p
+
+
+```
+
