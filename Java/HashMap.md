@@ -28,16 +28,16 @@
   
   链表长度<8时仍然使用链表是因为构造树也需要资源
 
+---
 
-
-# 运算符
+**运算符**
 
 - [Java运算符](https://baijiahao.baidu.com/s?id=1659125201403697638&wfr=spider&for=pc)
 - [原码、反码、补码 详解](https://zhuanlan.zhihu.com/p/91967268)
 
+---
 
-
-# 参考视频
+**参考视频**
 
 [数据结构与算法(Java语言版)](https://www.bilibili.com/video/BV11A411j7zQ?p=1)
 
