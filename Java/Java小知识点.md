@@ -1,4 +1,4 @@
-# 1. 数字中间可以加下划线
+# 数字中间可以加下划线
 
 Java7开始，数字可以使用下划线**提高可读性**，compiler会无视这些下划线。
 
@@ -8,7 +8,7 @@ Java7开始，数字可以使用下划线**提高可读性**，compiler会无视
 
 
 
-# 2. 特殊浮点数
+# 特殊浮点数
 
 - 非数字：`Double.NaN`，`Float.NaN`
 - 正无穷： `Double.POSITIVE_INFINITY`，`Float.POSITIVE_INFINITY`
@@ -18,13 +18,13 @@ Java7开始，数字可以使用下划线**提高可读性**，compiler会无视
 
 
 
-# 3. 常量
+# 常量
 
 使用`final`来定义常量。虽然Java预留了`const`作为keyword，但是并没有启用。
 
 
 
-# 4. `strictfp`
+# `strictfp`
 
 strict floating point
 
@@ -32,7 +32,7 @@ strict floating point
 
 
 
-# 5. 求非负余数
+# 求非负余数
 
 负数%正数有时候会得到负余数，使用`Math.floorMod(-1, 2)`来稳定得到非负余数。
 
@@ -52,7 +52,7 @@ System.out.println(Math.floorMod(-1, -2));
 
 
 
-# 6. 全平台数学运算
+# 全平台数学运算
 
 使用`StrictMath`类来代替`Math`类
 
