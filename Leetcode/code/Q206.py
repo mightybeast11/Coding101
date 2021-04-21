@@ -12,6 +12,7 @@ def  reverse_linkedlist(head):
     head.next = None # end case
     return ret
 
+
 if __name__ == '__main__':
     n3 = Node(3, None)
     n2 = Node(2, n3)

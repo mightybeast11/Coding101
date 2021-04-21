@@ -33,6 +33,7 @@ def levelOrderTraversal(root):
     return ret # Q102
     # return list(reversed(ret)) # Q107
 
+
 if __name__=='__main__':
     left = TreeNode(2, None, None)
     right = TreeNode(3, None, None)
