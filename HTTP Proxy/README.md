@@ -5,7 +5,7 @@
 
 -   Add URL string as `main` method argument following this [instruction](https://stackoverflow.com/questions/2066307/how-do-you-input-command-line-arguments-in-intellij-idea). For the default website, input "http://www.bom.gov.au" into the **Program Arguments** field. (Note: URL argument only supports **one single string url**.)
 -   Run `Proxy.java` in IntelliJ.
--   Input `localhost:6331` in a browser to retrieve the modified main page. Enjoy marking!
+-   Input `localhost:6331` in a browser to retrieve the modified main page.
 
 ---
 
@@ -21,7 +21,7 @@ This approach is not recommended, because it is tricky to compile with external 
 
 -   Run `java Proxy "http://www.bom.gov.au"`
 
--   Input `localhost:6331` in a browser to retrieve the modified main page. Enjoy marking!
+-   Input `localhost:6331` in a browser to retrieve the modified main page.
 
 ---
 
