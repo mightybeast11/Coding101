@@ -180,7 +180,7 @@ In [C](https://en.wikipedia.org/wiki/C_(programming_language)) and [C++](https:/
 
 - 循环
 
-1. `loop`有点像python的`while True:`, 本身不会停止, 需要手动`break`
+    1. `loop`有点像python的`while True:`, 本身不会停止, 需要手动`break`
 
         `break`后的值会被返回
 
