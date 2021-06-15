@@ -1,0 +1,47 @@
+class Solution:
+    def searchRange(self, nums, target):
+        start = self.leftBinarySearch(nums, target)
+        end = self.rightBinarySearch(nums, target) - 1
+        if start <= end:
+            return [start, end]
+        else:
+            return [-1, -1]
+
+    def leftBinarySearch(self, nums, target): # 第一个大于等于target的index (也就是第一个target的index)
+        index = len(nums) # 否则过不了l2 test
+        left = 0
+        right = len(nums) - 1
+
+        while left <= right:
+            mid = left + ((right - left) >> 1)
+            # target有多个index, 所以合并了基础二分里的等于和大于2个case
+            if nums[mid] >= target:
+                index = mid
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        return index
+
+    def rightBinarySearch(self, nums, target): # 第一个大于target的index
+        index = len(nums) # 否则过不了l2 test
+        left = 0
+        right = len(nums) - 1
+
+        while left <= right:
+            mid = left + ((right - left) >> 1)
+            # target有多个index, 所以合并了基础二分里的等于和大于2个case
+            if nums[mid] > target: 
+                index = mid # 没有break, 所以要不断记录当前符合条件的index
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        return index
+
+if __name__ == '__main__':
+    l1 = [5,7,7,8,8,10]
+    l2 = [1]
+    sol = Solution()
+    print(sol.searchRange(l1, 8))
+    print(sol.searchRange(l2, 1))
