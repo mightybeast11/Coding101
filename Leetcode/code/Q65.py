@@ -2,8 +2,9 @@ import re
 
 class Solution:
     def isNumber(self, s):
-        regex = re.compile("^[+-]?(?:\\d+\\.?\\d*|\\.\\d+)(?:[Ee][+-]?\\d+)?$")
-        result = regex.match(s)
+        # regex = re.compile("^[+-]?(?:\\d+\\.?\\d*|\\.\\d+)(?:[Ee][+-]?\\d+)?$") # regular string
+        regex = re.compile(r"^[+-]?(?:\d+\.?\d*|\.\d+)(?:[Ee][+-]?\d+)?$") # raw string
+        result = regex.match(s) # a Match object (always True) or None
         if result == None:
             return False
         return True
@@ -32,4 +33,4 @@ if __name__ == '__main__':
     "()?" # 0 or 1 exponential part, optional
     "[Ee]" # must have exactly 1, can be either E or e
 
-    "$" # start of string
+    "$" # end of string
