@@ -100,3 +100,9 @@ subsets = sum([list(map(list, combinations(List, i))) for i in range(len(List) +
 
 ---
 
+# 用重复元素创建新集合
+
+-   重复元素是`int`等时可以用: `[1] * 3`
+-   重复元素是空list时不能用`[[]] * 3`, 修改其中一个元素, 其他所有元素也都会变, 所有元素其实是同一个list. 所以必须用: `[[] for _ in range(3)]`
+
+---
