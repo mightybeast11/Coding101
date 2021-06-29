@@ -4,7 +4,7 @@ class Solution:
             return s
 
         l = [[] for _ in range(numRows)]
-        split = [[s[i:i+numRows], s[i+numRows:i+2*numRows-2]]for i in range(0, len(s), 2*numRows-2)]
+        split = [[s[i:i+numRows], s[i+numRows:i+2*numRows-2]] for i in range(0, len(s), 2*numRows-2)]
         for p in split:
             for i, ch in enumerate(p[0]):
                 l[i].append(ch)
